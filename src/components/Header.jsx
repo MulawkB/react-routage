@@ -11,30 +11,25 @@ function Header() {
         <Navbar bg="light" data-bs-theme="light">
           <Container>
             <Nav className="ms-auto">
-              <NavLink
+              <Nav.Link
                 to="/"
-                className={({isActive}) =>
-                 isActive ? "selected" : "nav-link"
-                }
+                as={NavLink}
+                activeClassName="selected"
               >
                 Accueil
-              </NavLink>
-              <NavLink
+              </Nav.Link>
+              <Nav.Link
                 to="/category/vetements"
-                className={({isActive}) =>
-                 isActive ? "selected" : "nav-link"
-                }
+                as={NavLink}
               >
                 Vêtements
-              </NavLink>
-              <NavLink
+              </Nav.Link>
+              <Nav.Link
                 to="/category/chaussures"
-                className={({isActive}) =>
-                 isActive ? "selected" : "nav-link"
-                }
+                as={NavLink}
               >
                 Chaussures
-              </NavLink>
+              </Nav.Link>
             </Nav>
           </Container>
         </Navbar>
