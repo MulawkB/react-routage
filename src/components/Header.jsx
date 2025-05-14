@@ -13,7 +13,7 @@ function Header() {
         <Navbar bg="light" data-bs-theme="light">
           <Container>
             <Nav className="ms-auto">
-              {match ? <Navbar >Catégorie : {match.params.query}</Navbar> : ""}
+              {match ? <Navbar >Catégorie : {match.params.query} </Navbar> : ""}
               <Nav.Link to="/" as={NavLink}>
                 Accueil
               </Nav.Link>
